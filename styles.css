@@ -1,0 +1,68 @@
+html{
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    font-size: 1.5rem;
+    max-width: 500px;
+    /*border: 1px solid grey;*/
+    border-radius: 30px;
+    box-shadow: 0 0 20px 30px #f9f9f9;
+    margin-top: 10rem;
+    overflow: hidden;
+    transform: rotate(-5deg);
+    transition: transform 0.5s;
+    /*animation-duration: 0.7s;*/
+}
+
+p{
+    padding: 1rem 2rem;
+}
+
+span{
+    font-size: 2rem;
+    color: rgba(92, 191, 187, 1)
+}
+footer{
+    /*height: 80px;*/
+    display:flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(116, 214, 144, 1) 0%, rgba(92, 191, 187, 1) 50%);
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+    padding: 0 1.5rem;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid whitesmoke;
+    border-radius: 100%;
+    margin: 2.3rem;
+    transition: transform 0.5s;    
+}
+
+
+/*@keyframes card-rotate{
+    0%{transform: rotate(-5deg);}
+    50%{transform: rotate(0);}
+    100%{transform: rotate(-5deg);}
+}*/
+
+.card:hover {
+    transform: rotate(0);
+    /*animation-name: card-rotate;*/
+
+}
+.card:hover img{
+    transform: scale(1.5);
+}
+
